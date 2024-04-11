@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+const path = require('path');
+const dataPath = path.join(__dirname, 'data', 'data.json');
+
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'))
 app.get('/', (req, res) => {
-    fs.readFile('./data/data,json', 'utf8', (error, data) =>{
+    fs.readFile(dataPath, 'utf8', (error, data) =>{
         if (error) {
             console.error(error);
             return;
