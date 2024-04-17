@@ -10,8 +10,8 @@ const data = {
     "person_Mo_number": "+91 9978943793",
     "hire_btn_show": false,
     "my_work_btn_show": false,
-    "hero_image1": "images/divybg1.png",
-    "hero_image2": "images/divybg1.png"
+    "hero_image1": "https://github.com/mrDivyshah/my-portfolio/blob/main/public/images/divybg1.png?raw=true",
+    "hero_image2": "https://github.com/mrDivyshah/my-portfolio/blob/main/public/images/divybg1.png?raw=true"
 }
 
 module.exports = data;
