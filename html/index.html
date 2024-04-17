@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech</title>
+</head>
+<body>
+    <button onclick="textToSpeech('Hello, welcome to the text-to-speech model in the browser!')">Speak</button>
+
+    <script>
+        // Function to convert text to speech
+        function textToSpeech(text) {
+            // Check if the Web Speech API is available in the browser
+            if ('speechSynthesis' in window) {
+                // Create a new SpeechSynthesisUtterance object with the provided text
+                var message = new SpeechSynthesisUtterance(text);
+                
+                // Optionally configure speech synthesis options
+                message.rate = 2.5; // Speech rate (speed)
+                message.pitch = 10; // Speech pitch (tone)
+                
+                // Speak the text
+                window.speechSynthesis.speak(message);
+            } else {
+                console.error('Speech synthesis is not supported in this browser.');
+            }
+        }
+    </script>
+</body>
+</html>
