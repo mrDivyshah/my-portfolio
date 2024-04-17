@@ -17,15 +17,8 @@
   },
   "homepage": "https://github.com/mrDivyshah/my-portfolio#readme",
   "dependencies": {
-    "@google-cloud/text-to-speech": "^5.2.0",
     "ejs": "^3.1.9",
     "express": "^4.19.2",
-    "google-tts-api": "^2.0.2",
-    "gtts": "^0.2.1",
-    "jaxcore-say-node": "^0.0.9",
-    "jaxcore-speak": "^0.0.4",
-    "nodemon": "^3.1.0",
-    "speaker": "^0.5.4",
-    "talkify-tts": "^4.0.0"
+    "nodemon": "^3.1.0"
   }
 }
