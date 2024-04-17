@@ -4,6 +4,7 @@ const path = require('path');
 const data = require('./data/data.js');
 
 app.set('view engine', 'ejs');
+app.set('views', '/var/task/views');
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => {
