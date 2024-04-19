@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const data = require('./data/data.js');
-
+const telegeamBot = require('./telegramBot/bot.js');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'))
